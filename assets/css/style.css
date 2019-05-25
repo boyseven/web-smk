@@ -1,0 +1,15 @@
+/*Versi Mobile*/
+.navbar-brand{
+    float: none !important;
+}
+
+/*Versi Desktop*/
+@media (min-width: 992px) {
+.navbar-brand{
+    float: none !important;
+}
+.nav-link{
+	font-family: Josefin Sans;
+	text-transform: uppercase;
+}
+}
