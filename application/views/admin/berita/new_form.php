@@ -41,14 +41,6 @@
 										<?php echo form_error('judul') ?>
 									</div>
 								</div>
-								<div class="form-group">
-									<label for="slug">Slug*</label>
-									<input class="form-control <?php echo form_error('judul') ? 'is-invalid':'' ?>"
-									type="text" name="slug" placeholder="Slug berita" value="<?php echo set_value('judul') ?>" />
-									<div class="invalid-feedback">
-										<?php echo form_error('judul') ?>
-									</div>
-								</div>
 
 								<div class="form-group">
 									<label for="name">Lead*</label>
@@ -77,17 +69,17 @@
 									<div class="invalid-feedback">
 										<?php echo form_error('gambar') ?>
 									</div>
-									<label class="text-muted">Maks. Ukuran 1280x853 (1MB)</label>
+									<label class="text-muted">Maks. Ukuran 1280x853 (2MB)</label>
 								</div>
 
-								<div class="form-group">
+								<!-- <div class="form-group">
 									<label for="name">Kategori*</label>
 									<input class="form-control <?php echo form_error('kategori') ? 'is-invalid':'' ?>"
 									type="text" name="kategori" placeholder="kategori berita" value="<?php echo set_value('kategori') ?>"/>
 									<div class="invalid-feedback">
 										<?php echo form_error('kategori') ?>
 									</div>
-								</div>
+								</div> -->
 
 								<div class="form-group">
 									<label for="name">Post*</label>
@@ -98,7 +90,7 @@
 									</div>
 								</div>
 
-								<div class="form-group">
+								<!-- <div class="form-group">
 									<label for="name">Penulis*</label>
 									<input class="form-control <?php echo form_error('penulis') ? 'is-invalid':'' ?>"
 									type="text" name="penulis" placeholder="penulis berita" value="<?php echo set_value('penulis') ?>"/>
@@ -114,7 +106,7 @@
 									<div class="invalid-feedback">
 										<?php echo form_error('tags') ?>
 									</div>
-								</div>
+								</div> -->
 								<input class="btn btn-success" type="submit" name="btn" value="Upload" />
 							</div>
 						</div>	

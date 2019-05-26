@@ -26,62 +26,52 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('admin/berita/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('admin/jumbotron/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
 					</div>
 					<div class="card-body">
 
-						<form action="<?php base_url('admin/berita/edit') ?>" method="post" enctype="multipart/form-data" >
+						<form action="<?php base_url('admin/jumbotron/edit') ?>" method="post" enctype="multipart/form-data" >
 							<div class="row">
-							<input type="hidden" name="id" value="<?php echo $berita->id?>" />
+							<input type="hidden" name="id" value="<?php echo $jumbotron->id?>" />
 								<div class="col-md-9">
 									<div class="form-group">
 										<label for="name">Judul*</label>
 										<input class="form-control <?php echo form_error('judul') ? 'is-invalid':'' ?>"
-										 type="text" name="judul" placeholder="Judul berita" value="<?php echo $berita->judul ?>" />
+										 type="text" name="judul" placeholder="Judul jumbotron" value="<?php echo $jumbotron->judul ?>" />
 										<div class="invalid-feedback">
 											<?php echo form_error('judul') ?>
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label for="name">Lead*</label>
-										<textarea class="form-control <?php echo form_error('lead') ? 'is-invalid':'' ?>"
-										 name="lead" placeholder="Lead" ><?php echo $berita->lead ?></textarea>
+										<label for="name">Deksripsi*</label>
+										<textarea class="form-control <?php echo form_error('deskripsi') ? 'is-invalid':'' ?>"
+										 name="deskripsi" placeholder="Lead" ><?php echo $jumbotron->deskripsi ?></textarea>
 										<div class="invalid-feedback">
-											<?php echo form_error('lead') ?>
+											<?php echo form_error('deskripsi') ?>
 										</div>
 									</div>
 
-
-									<div class="form-group">
-										<label for="name">Content*</label>
-										<textarea class="form-control <?php echo form_error('content') ? 'is-invalid':'' ?>"
-										 name="content" placeholder="Isi content berita..." ><?php echo $berita->content ?></textarea>
-										<div class="invalid-feedback">
-											<?php echo form_error('content') ?>
-										</div>
-									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 shadow p-3 mb-5 bg-white rounded">
 										<label>Foto</label>
 										<div class="custom-file">
 											<input class="form-control-file custom-file-input <?php echo form_error('gambar') ? 'is-invalid':'' ?>"
 											type="file" name="gambar" value="<?php echo set_value('gambar') ?>"/>
 											<label class="custom-file-label" for="name">Pilih foto</label>
-											<input type="hidden" name="old_image" value="<?php echo $berita->gambar ?>">
+											<input type="hidden" name="old_image" value="<?php echo $jumbotron->gambar ?>">
 											<div class="invalid-feedback">
 												<?php echo form_error('gambar') ?>
 										</div>
-										<label class="text-muted">Maks. Ukuran 1280x853 (2MB)</label>
+										<label class="text-muted">Ukuran Optimal 1280x853 px</label>
 
-									<div class="form-group">
-										<label for="name">Post*</label>
-										<input id="datepicker" class="form-control <?php echo form_error('tanggal') ? 'is-invalid':'' ?>"
-										 type="text" name="tanggal" placeholder="Tanggal post berita" value="<?php echo $berita->tanggal ?>"/>
-										<div class="invalid-feedback">
-											<?php echo form_error('tanggal') ?>
+										<hr>
+										<div class="checkbox ">
+											<label for="tampil" class="col-lg-6">Tampil</label>
+											<input class="col-lg-6" name="tampil" type="checkbox" checked data-toggle="toggle">
+											</label>
 										</div>
-									</div>
+										<hr>
 
 									<input class="btn btn-success" type="submit" name="btn" value="Save" />
 								</div>	

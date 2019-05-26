@@ -20,6 +20,8 @@
   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
   <!-- Text Editor js -->
   <script src="https://cdn.ckeditor.com/4.11.3/full/ckeditor.js"></script>
+  <!-- bootstrap-toggle -->
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
   <script>
   $('.custom-file-input').on('change', function(){

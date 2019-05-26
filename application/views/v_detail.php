@@ -51,7 +51,7 @@
                     <div class="card mb-10">
                         <!-- Title -->
                         <h2 class="card-title"><?= $berita_d->judul; ?></h2>
-                        <h6 class="card-subtitle mb-2 text-muted">Oleh <?= $berita_d->penulis.' | '.$berita_d->tanggal; ?></h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Oleh <?= 'Admin | '.$berita_d->tanggal; ?></h6>
                         <!--Card image-->
                         <div class="view overlay">
                             <img class="card-img-top" src="<?= base_url('/upload/berita/') . $berita_d->gambar; ?>">

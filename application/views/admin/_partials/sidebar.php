@@ -10,9 +10,14 @@
           <i class="fas fa-fw fa-user"></i>
           <span>My Profil</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('admin/jumbotron') ?>">
+          <i class="fas fa-images"></i>
+          <span>Jumbotron</span></a>
+      </li>
       <li class="nav-item dropdown <?php echo $this->uri->segment(2)=='berita'?'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-fw fa-newspaper"></i>
           <span>Berita</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
@@ -21,10 +26,16 @@
           <a class="dropdown-item" href="<?php echo site_url('admin/berita') ?>">List Berita</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+      <li class="nav-item dropdown <?php echo $this->uri->segment(2)=='berita'?'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-address-card"></i>
+          <span>Menu Profil</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header">Profil:</h6>
+          <a class="dropdown-item" href="<?php echo site_url('admin/berita/add') ?>">Tambah Profil</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/berita') ?>">List Profil</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?= site_url('admin/overview/changepassword') ?>">

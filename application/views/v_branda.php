@@ -29,12 +29,12 @@
 	?>
 	<div class="ticker-container">
 		<div class="ticker-caption">
-			<p>Terkini</p>
+			<p>Info Terkini</p>
 		</div>
 		<ul>
 			<?php foreach ($ticker as $ticker) : ?>
 				<div>
-					<li><span><a href="<?= site_url('/berita/' . $ticker->slug_berita); ?>"><?= $ticker->judul; ?></a></span></li>
+					<li><span><a href='<?= site_url('/berita/' . $ticker->slug_berita); ?>'><?= $ticker->judul; ?></a></span></li>
 				</div>
 			<?php endforeach; ?>
 		</ul>
@@ -48,7 +48,7 @@
 				<hr />
 			</td>
 			<td style="vertical-align:middle; text-align: center">
-				<h3>Terkini</h3>
+				<h3>BERITA</h3>
 			</td>
 			<td style="width:80%">
 				<hr />
@@ -69,7 +69,7 @@
 
 							<!--Card image-->
 							<div class="view overlay">
-								<img class="card-img-top" src="<?= base_url('/upload/berita/') . $berita->gambar; ?>">
+								<img class="card-img-top" src='<?= base_url('/upload/berita/') . $berita->gambar; ?>'>
 								<a href="#!">
 									<div class="mask rgba-white-slight"></div>
 								</a>
@@ -83,7 +83,7 @@
 								<!--Text-->
 								<p class="card-text"><?= character_limiter($berita->lead, 100); ?></p>
 								<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-								<a href="<?= site_url('/berita/' . $berita->slug_berita); ?>">Selengkapnya</a>
+								<a href='<?= site_url('/berita/' . $berita->slug_berita); ?>'>Selengkapnya</a>
 
 							</div>
 						</div>

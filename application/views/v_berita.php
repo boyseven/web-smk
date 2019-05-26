@@ -29,7 +29,7 @@
     ?>
     <div class="ticker-container">
         <div class="ticker-caption">
-            <p>Terkini</p>
+            <p>Info Terkini</p>
         </div>
         <ul>
             <?php foreach ($ticker as $ticker) : ?>
@@ -80,7 +80,7 @@
 
                                 <!--Title-->
                                 <b class="card-title"><?= $berita->judul; ?></b>
-                                <p class="card-text text-muted">Oleh <?= $berita->penulis . ' | ' . $berita->tanggal; ?></p>
+                                <p class="card-text text-muted">Oleh <?= 'Admin | ' . $berita->tanggal; ?></p>
                                 <!--Text-->
                                 <p class="card-text"><?= character_limiter($berita->lead, 100); ?></p>
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
